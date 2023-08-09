@@ -1,0 +1,69 @@
+CREATE DATABASE bbms;
+use bbms;
+
+CREATE TABLE donor(user_name VARCHAR(50) NOT NULL,
+date_of_birth date NOT NULL,
+age INT(60) NOT NULL, 
+blood_group VARCHAR(10) NOT NULL,
+address VARCHAR(30) NOT NULL,
+mobile_no INT(12) NOT NULL,
+email VARCHAR(25) NOT NULL,
+gender VARCHAR(10) NOT NULL,
+regdate date);
+
+CREATE TABLE apply(
+user_name VARCHAR(50) NOT NULL,
+date_of_apply date NOT NULL,
+blood_group VARCHAR(10) NOT NULL,
+address VARCHAR(30) NOT NULL,
+mobile_no INT(12) NOT NULL,
+email VARCHAR(25) NOT NULL,
+gender VARCHAR(10) NOT NULL,
+regdate date);
+
+CREATE TABLE registration(
+user_name VARCHAR(50) NOT NULL,
+pass VARCHAR(20) NOT NULL,
+date_of_birth date NOT NULL,
+age INT(60) NOT NULL, 
+blood_group VARCHAR(10) NOT NULL,
+address VARCHAR(30) NOT NULL,
+mobile_no INT(12) NOT NULL,
+email VARCHAR(25) NOT NULL,
+gender VARCHAR(10) NOT NULL,
+regdate date);
+
+CREATE TABLE bloodbank(
+bank_name VARCHAR(50) NOT NULL,
+hospital VARCHAR(20) NOT NULL,
+address VARCHAR(30) NOT NULL,
+contact varchar(15) NOT NULL,
+email VARCHAR(25) NOT NULL,
+website VARCHAR(100) NOT NULL,
+regdate date);
+
+CREATE TABLE admincamp(
+camp_area VARCHAR(50) NOT NULL,
+venue VARCHAR(20) NOT NULL,
+date DATE NOT NULL,
+time time NOT NULL,
+unit int(10) NOT NULL,
+regdate date);
+
+CREATE TABLE contact(
+user_name VARCHAR(50) NOT NULL,
+email VARCHAR(25) NOT NULL,
+message varchar(150) NOT NULL,
+regdate date);
+
+CREATE TABLE adminlogin(
+user_name VARCHAR(50) NOT NULL,
+pass VARCHAR(25) NOT NULL);
+
+insert into adminlogin values('susma','sss');
+
+
+
+
+
+
